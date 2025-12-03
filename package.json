@@ -1,7 +1,7 @@
 {
-  "name": "express-generator",
-  "description": "Express' application generator",
-  "version": "4.16.1",
+  "name": "vivex-generator",
+  "description": "Express' application generator adapted for use at Vives graduaat programmeren",
+  "version": "1.0.0",
   "author": "TJ Holowaychuk <tj@vision-media.ca>",
   "contributors": [
     "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
@@ -22,7 +22,7 @@
     "app",
     "api"
   ],
-  "repository": "expressjs/generator",
+  "repository": "grad-prog-web-development/vivex-generator",
   "license": "MIT",
   "dependencies": {
     "ejs": "2.6.2",

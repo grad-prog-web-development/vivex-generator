@@ -3,6 +3,8 @@
 [Express'](https://www.npmjs.com/package/express) application generator.
 
 # Vives Express Generator
+- Express generator updated dependencies for express with hbs views. 
+- Removed all var-keywords and used double quotes instead of single quotes over the entire application.
 
 ## Installation
 

@@ -101,6 +101,9 @@ function createApplication (name, dir, options, done) {
     dependencies: {
       debug: '^4.4.3',
       express: '^5.2.1'
+    },
+    devDependencies: {
+      nodemon: '^3.1.11'
     }
   }
 

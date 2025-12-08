@@ -96,7 +96,7 @@ function createApplication (name, dir, options, done) {
     private: true,
     scripts: {
       start: 'node ./bin/www',
-      dev: 'nodemon --experimental-sqlite ./bin/www -e js,json,hbs,css'
+      dev: 'nodemon ./bin/www -e js,json,hbs,css'
     },
     dependencies: {
       debug: '^4.4.3',

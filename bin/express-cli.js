@@ -122,7 +122,7 @@ function createApplication (name, dir, options, done) {
 
   // Request logger
   app.locals.modules.logger = 'morgan'
-  app.locals.uses.push("logger('dev')")
+  app.locals.uses.push('logger("dev")')
   pkg.dependencies.morgan = '^1.10.0'
 
   // Body parsers
@@ -226,12 +226,12 @@ function createApplication (name, dir, options, done) {
   }
 
   // Index router mount
-  app.locals.localModules.indexRouter = './routes/index'
-  app.locals.mounts.push({ path: '/', code: 'indexRouter' })
+  app.locals.localModules.indexRouter = "./routes/index"
+  app.locals.mounts.push({ path: "/", code: "indexRouter" })
 
   // User router mount
-  app.locals.localModules.usersRouter = './routes/users'
-  app.locals.mounts.push({ path: '/users', code: 'usersRouter' })
+  app.locals.localModules.usersRouter = "./routes/users"
+  app.locals.mounts.push({ path: "/users", code: "usersRouter" })
 
   // Template support
   switch (options.view) {
@@ -277,7 +277,7 @@ function createApplication (name, dir, options, done) {
   }
 
   // Static files
-  app.locals.uses.push("express.static(path.join(__dirname, 'public'))")
+  app.locals.uses.push('express.static(path.join(__dirname, "public"))')
 
   if (options.git) {
     copyTemplate('js/gitignore', path.join(dir, '.gitignore'))

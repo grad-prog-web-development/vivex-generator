@@ -1,33 +1,37 @@
 [![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
 
-[Express'](https://www.npmjs.com/package/express) application generator.
+[Express'](https://www.npmjs.com/package/express) application generator used for VIVES graduaat programmeren.
 
 # Vives Express Generator
+Package from [Express-generator](https://www.npmjs.com/package/express-generator)
 - Express generator updated dependencies for express with hbs views. 
 - Removed all var-keywords and used double quotes instead of single quotes over the entire application.
 
 ## Installation
 
-```sh
-$ npm install -g express-generator
-```
 
 You can also run the application generator with the `npx` command (available since Node.js 8.2.0).
 
 ```sh
-$ npx express-generator
+$ npx vivex-generator
 ```
 
 ## Quick Start
 
-The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:
+The quickest way to get started with express is to utilize `vivex-generator` to generate an application as shown below:
 
 Create the app:
 
 ```bash
-$ express --view=hbs /tmp/foo && cd /tmp/foo
+$ npx vivex-generator --view=hbs --git /tmp/foo
 ```
 
+Go into project directory & open with vscode
+
+```sh
+cd /tmp/foo
+code .
+```
 Install dependencies:
 
 ```bash
@@ -38,6 +42,11 @@ Start your Express.js app at `http://localhost:3000/`:
 
 ```bash
 $ npm start
+```
+Nodemon is also installed and configured. Server will automatically restart on changes with:
+
+```bash
+$ npm run dev
 ```
 
 ## Command Line Options

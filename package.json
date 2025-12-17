@@ -22,7 +22,9 @@
     "app",
     "api"
   ],
-  "repository": "grad-prog-web-development/vivex-generator",
+  "repository": {
+    "url": "git+https://github.com/grad-prog-web-development/vivex-generator.git"
+  },
   "license": "MIT",
   "dependencies": {
     "ejs": "2.6.2",
@@ -33,9 +35,6 @@
   },
   "main": "bin/express-cli.js",
   "preferGlobal": true,
-  "bin": {
-    "express": "./bin/express-cli.js"
-  },
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-standard": "14.1.1",
